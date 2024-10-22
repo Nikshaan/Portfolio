@@ -77,11 +77,13 @@ import photo74 from "../assets/photo74.jpg";
 import photo75 from "../assets/photo75.jpg";
 import photo76 from "../assets/photo76.jpg";
 
-const photos = []
-
-for(let i = 1; i <= 76; i++){
-  photos.push(eval(`photo` + `${i}`))
-};
+const photos = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10,
+  photo11, photo12, photo13, photo14, photo15, photo16, photo17, photo18, photo19, photo20, photo21, photo22,
+  photo23, photo24, photo25, photo26, photo27, photo28, photo29, photo30, photo31, photo32, photo33, photo34,
+  photo35, photo36, photo37, photo38, photo39, photo40, photo41, photo42, photo43, photo44, photo45, photo46,
+  photo47, photo48, photo49, photo50, photo51, photo52, photo53, photo54, photo55, photo56, photo57, photo58,
+  photo59, photo60, photo61, photo62, photo63, photo64, photo65, photo66, photo67, photo68, photo69, photo70,
+  photo71, photo72, photo73, photo74, photo75, photo76]
 
 const Clicks = () => {
   return (
