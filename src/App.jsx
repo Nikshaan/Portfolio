@@ -21,10 +21,10 @@ const App = () => {
       <PreLoader loader={loader} />
       <Routes>
         <Route path = "/" element = {<Home />} />
-        <Route path='/Portfolio/' element={<Home />} />
-        <Route path = "/projects" element = {<Projects />} />
-        <Route path = "/clicks" element = {<Clicks />} />
-        <Route path = "*" element = {<ErrorPage />} />
+        <Route path= "/Portfolio/" element={<Home />} />
+        <Route path = "/Portfolio/projects" element = {<Projects />} />
+        <Route path = "/Portfolio/clicks" element = {<Clicks />} />
+        <Route path = "/Portfolio/*" element = {<ErrorPage />} />
         </Routes>
     </>
   )
