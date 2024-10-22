@@ -29,7 +29,7 @@ const Home = () => {
     }, []);
 
   return (
-        <motion.div className="flex flex-col h-screen relative min-w-[320px] min-h-[740px] md:min-h-[1084px] lg:min-h-[548px] xl:min-h-[692px] 2xl:min-h-[950px]">
+        <motion.div className="flex flex-col h-[100svh] relative min-w-[320px] min-h-[740px] md:min-h-[1084px] lg:min-h-[548px] xl:min-h-[692px] 2xl:min-h-[950px]">
 
             <Navbar />
 
