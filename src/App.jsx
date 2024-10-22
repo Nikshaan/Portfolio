@@ -21,6 +21,7 @@ const App = () => {
       <PreLoader loader={loader} />
       <Routes>
         <Route path = "/" element = {<Home />} />
+        <Route path='/Portfolio/' element={<Home />} />
         <Route path = "/projects" element = {<Projects />} />
         <Route path = "/clicks" element = {<Clicks />} />
         <Route path = "*" element = {<ErrorPage />} />
