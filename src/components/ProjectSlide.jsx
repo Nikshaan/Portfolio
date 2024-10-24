@@ -20,11 +20,11 @@ export const ProjectSlide = ({img, heading, desc, stack, github, demo}) => {
                 <div className="flex gap-2 w-full justify-center items-center 2xl:p-3 mt-10">
                     <Link to={github} alt="image" className="flex rounded-lg items-center md:text-lg lg:text-2xl 2xl:text-3xl justify-center gap-2 border-2 font-Raleway border-black py-1 px-2 text-white bg-[#222831]">
                         <p>GitHub</p>
-                        <img src={repo} className="w-8 bg-white rounded-full"/>
+                        <img src={repo} alt="repo" className="w-8 bg-white rounded-full"/>
                     </Link>
                     <Link to={demo} className="flex rounded-lg items-center md:text-lg lg:text-2xl 2xl:text-3xl justify-center gap-2 border-2 font-Raleway border-black py-1 px-2 text-white bg-[#222831]">
                         <p>Demo</p>
-                        <img src={live} alt="image" className="w-8 bg-white rounded-full"/>
+                        <img src={live} alt="demo" className="w-8 bg-white rounded-full"/>
                     </Link>
                 </div>
             </div>

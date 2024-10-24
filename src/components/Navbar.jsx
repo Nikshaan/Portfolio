@@ -59,18 +59,18 @@ const Navbar = () => {
 
         <div className="flex items-center justify-center gap-1">
             <Link to = "https://github.com/Nikshaan">
-                <img src = {github} className="h-9 md:h-10 lg:h-12 bg-white rounded-full mx-2"/>
+                <img src = {github} alt="github" className="h-9 md:h-10 lg:h-12 bg-white rounded-full mx-2"/>
             </Link>
             <Link to = "https://www.linkedin.com/in/nikshaan-shetty-951026293/">
-                <img src = {linkedin} className="h-9 md:h-10 lg:h-12 bg-white rounded-full mx-2"/>
+                <img src = {linkedin} alt="linkedin" className="h-9 md:h-10 lg:h-12 bg-white rounded-full mx-2"/>
             </Link>
             <Link to= "https://www.instagram.com/nik.shaan/">
-                <img src = {instagram} className="h-9 md:h-10 lg:h-12 bg-white rounded-full mx-2"/>
+                <img src = {instagram} alt="instagram" className="h-9 md:h-10 lg:h-12 bg-white rounded-full mx-2"/>
             </Link>
         </div>
 
         <div className="md:hidden relative">
-            <img src={menu} className="w-10" onClick={() => setMenuDisplay(!menuDisplay)}/>
+            <img src={menu} alt="menu" className="w-10" onClick={() => setMenuDisplay(!menuDisplay)}/>
             {
                 menuDisplay && 
                 <div className="px-4 py-3 flex flex-col justify-center items-center border-2 border-[#76ABAE] gap-2 right-6 my-2 -mx-9 absolute bg-[#31363F] z-10 text-white">
