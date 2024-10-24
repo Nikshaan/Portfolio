@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <motion.div className = "flex items-center min-w-[320px] justify-around bg-[#222831] py-5 sm:px-10">
 
-        <NavLink to = "/Portfolio/">
+        <NavLink to = "/">
         <div className="text-[#76ABAE]">
             <p className="text-4xl lg:text-5xl font-Raleway font-extrabold">Ns.</p>
         </div>
@@ -30,7 +30,7 @@ const Navbar = () => {
             initial = "initial"
             whileHover = "animate"
             >
-            <NavLink to = "/Portfolio/">
+            <NavLink to = "/">
                 <p className="font-Raleway md:text-2xl lg:text-3xl">Home</p>
                 <motion.div variants = {underline} className = "border-t-4 border-[#76ABAE] transition-all duration-100 ease-out"/>
             </NavLink>
@@ -40,7 +40,7 @@ const Navbar = () => {
             initial = "initial"
             whileHover = "animate"
             >
-            <NavLink to = "/Portfolio/projects">
+            <NavLink to = "/projects">
                 <p className="font-Raleway md:text-2xl lg:text-3xl">Projects</p>
                 <motion.div variants = {underline} className = "border-t-4 border-[#76ABAE] transition-all duration-100 ease-out" />
             </NavLink>
@@ -50,7 +50,7 @@ const Navbar = () => {
             initial = "initial"
             whileHover = "animate"
             >
-            <NavLink to = "/Portfolio/clicks">
+            <NavLink to = "/clicks">
                 <p className="font-Raleway md:text-2xl lg:text-3xl">Clicks</p>
                 <motion.div variants = {underline} className = "border-t-4 border-[#76ABAE] transition-all duration-100 ease-out" />
             </NavLink>
@@ -75,19 +75,19 @@ const Navbar = () => {
                 menuDisplay && 
                 <div className="px-4 py-3 flex flex-col justify-center items-center border-2 border-[#76ABAE] gap-2 right-6 my-2 -mx-9 absolute bg-[#31363F] z-10 text-white">
                     <div>
-                        <NavLink to = "/Portfolio/">
+                        <NavLink to = "/">
                             <p className="font-Raleway text-xl">Home</p>
                         </NavLink>
                     </div>
 
                     <div>
-                        <NavLink to = "/Portfolio/projects">
+                        <NavLink to = "/projects">
                             <p className="font-Raleway text-xl">Projects</p>
                         </NavLink>
                     </div>
 
                     <div>
-                        <NavLink to = "/Portfolio/clicks">
+                        <NavLink to = "/clicks">
                             <p className="font-Raleway text-xl">Clicks</p>
                         </NavLink>
                     </div>

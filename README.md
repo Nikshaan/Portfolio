@@ -1,15 +1,17 @@
-# nikshaan.xyz
 
-My Responsive Portfolio Website.
+# Portfolio Website
 
 
-## Demo
 
-https://nikshaan.github.io/Portfolio/
+## Live
+
+https://nikshaan.vercel.app/
+
+
 
 
 ## Tech Stack
 
-* Vite React.js
+* React.js
 * Tailwind CSS
 * Framer Motion
