@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import tictactoe from "../assets/tictactoe.png";
 import floraghar from "../assets/floraghar.png";
 import wordle from "../assets/wordle.png";
+import pokedex from "../assets/pokedex.png";
 
 const projectAnimation = {
   hidden: { x : '-100vw', opacity: 0 },
@@ -36,7 +37,7 @@ const Projects = () => {
           initial = "hidden"
           animate = "visible"
           transition = {{ delay: 0.4, duration: 1.5}}>
-            <ProjectSlide img = {wordle} heading = {'Pokedex'} desc  = {'A Simple Pokedex Build with PokeAPI.'} stack = {'React.js, Tailwind CSS & Framer Motion'} github = {'https://github.com/Nikshaan/Pokedex'} demo = {'https://nikshaan.github.io/Pokedex/'}/>
+            <ProjectSlide img = {pokedex} heading = {'Pokedex'} desc  = {'A Simple Pokedex Build with PokeAPI.'} stack = {'React.js, Tailwind CSS & Framer Motion'} github = {'https://github.com/Nikshaan/Pokedex'} demo = {'https://nikshaan.github.io/Pokedex/'}/>
           </motion.div>
 
           <motion.div
