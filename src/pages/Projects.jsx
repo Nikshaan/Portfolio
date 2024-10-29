@@ -27,31 +27,34 @@ const Projects = () => {
           variants={projectAnimation}
           initial = "hidden"
           animate = "visible"
-          transition = {{ delay: 0.2, duration: 1.5}}
-          >
+          transition = {{ delay: 0.2, duration: 1.5}}>
             <ProjectSlide img = {floraghar} heading = {'Floraghar'} desc  = {'A Responsive Plant Nursery Website.'} stack = {'React.js & Tailwind CSS'} github = {'https://github.com/Nikshaan/FloraGhar'} demo = {'https://nikshaan.github.io/FloraGhar/'}/>
-
           </motion.div>
 
           <motion.div
           variants={projectAnimation}
           initial = "hidden"
           animate = "visible"
-          transition = {{ delay: 0.4, duration: 1.5}}
-          >
+          transition = {{ delay: 0.4, duration: 1.5}}>
+            <ProjectSlide img = {wordle} heading = {'Pokedex'} desc  = {'A Simple Pokedex Build with PokeAPI.'} stack = {'React.js, Tailwind CSS & Framer Motion'} github = {'https://github.com/Nikshaan/Pokedex'} demo = {'https://nikshaan.github.io/Pokedex/'}/>
+          </motion.div>
+
+          <motion.div
+          variants={projectAnimation}
+          initial = "hidden"
+          animate = "visible"
+          transition = {{ delay: 0.6, duration: 1.5}}>
             <ProjectSlide img = {wordle} heading = {'Wordle'} desc  = {'Get 6 chances to guess a 5-letter word.'} stack = {'HTML, CSS & JavaScript'} github = {'https://github.com/Nikshaan/wordle'} demo = {'https://nikshaan.github.io/wordle/'}/>
-
           </motion.div>
 
           <motion.div
           variants={projectAnimation}
           initial = "hidden"
           animate = "visible"
-          transition = {{ delay: 0.6, duration: 1.5}}
-          >
+          transition = {{ delay: 0.8, duration: 1.5}}>
             <ProjectSlide img = {tictactoe} heading = {'Tic-Tac-Toe'} desc  = {'The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.'} stack = {'HTML, CSS & JavaScript'} github = {'https://github.com/Nikshaan/Tic-Tac-Toe'} demo = {'https://nikshaan.github.io/Tic-Tac-Toe/'}/>
-
           </motion.div>
+
         </div>
       </div>
 
