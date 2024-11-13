@@ -25,13 +25,13 @@ const Navbar = () => {
         </div>
         </NavLink>
 
-        <ul className = "hidden md:flex flex-1 items-center justify-center gap-10 w-full text-white">
+        <ul className = "hidden sm:flex flex-1 items-center justify-center gap-10 w-full text-white">
             <motion.div 
             initial = "initial"
             whileHover = "animate"
             >
             <NavLink to = "/">
-                <p className="font-Raleway md:text-2xl lg:text-3xl">Home</p>
+                <p className="font-Raleway sm:text-2xl lg:text-3xl">Home</p>
                 <motion.div variants = {underline} className = "border-t-4 border-[#76ABAE] transition-all duration-100 ease-out"/>
             </NavLink>
             </motion.div>
@@ -41,7 +41,7 @@ const Navbar = () => {
             whileHover = "animate"
             >
             <NavLink to = "/projects">
-                <p className="font-Raleway md:text-2xl lg:text-3xl">Projects</p>
+                <p className="font-Raleway sm:text-2xl lg:text-3xl">Projects</p>
                 <motion.div variants = {underline} className = "border-t-4 border-[#76ABAE] transition-all duration-100 ease-out" />
             </NavLink>
             </motion.div>
@@ -51,7 +51,7 @@ const Navbar = () => {
             whileHover = "animate"
             >
             <NavLink to = "/clicks">
-                <p className="font-Raleway md:text-2xl lg:text-3xl">Clicks</p>
+                <p className="font-Raleway sm:text-2xl lg:text-3xl">Clicks</p>
                 <motion.div variants = {underline} className = "border-t-4 border-[#76ABAE] transition-all duration-100 ease-out" />
             </NavLink>
             </motion.div>
@@ -69,7 +69,7 @@ const Navbar = () => {
             </Link>
         </div>
 
-        <div className="md:hidden relative">
+        <div className="sm:hidden relative">
             <img src={menu} alt="menu" className="w-10" onClick={() => setMenuDisplay(!menuDisplay)}/>
             {
                 menuDisplay && 

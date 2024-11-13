@@ -20,7 +20,7 @@ const Projects = () => {
 
       <div className="flex flex-col justify-center items-center w-full bg-[#222831] p-6 mt-4">
         <div className="w-full flex justify-start items-center px-4 lg:pt-10 lg:pb-5">
-          <h1 className="text-4xl md:text-5xl text-[#76ABAE] mb-10 underline-offset-8 underline font-Raleway">PROJECTS</h1>
+          <h1 className="text-4xl md:text-5xl 2xl:text-6xl text-[#76ABAE] mb-10 underline-offset-8 underline font-Raleway">PROJECTS</h1>
         </div>
         <div className="grid w-5/6 row-span-3 gap-12">
 

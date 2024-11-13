@@ -90,7 +90,7 @@ const Clicks = () => {
     <div>
       <Navbar />
       <div className="w-full flex justify-start items-center px-4 lg:pt-10 lg:pb-5 min-w-[320px]">
-          <h1 className="text-4xl md:text-5xl text-[#76ABAE] mt-10 px-6 underline-offset-8 underline font-Raleway">CLICKS</h1>
+          <h1 className="text-4xl md:text-5xl 2xl:text-6xl text-[#76ABAE] mt-10 px-6 underline-offset-8 underline font-Raleway">CLICKS</h1>
         </div>
       <div className="p-10 grid min-w-[320px] grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8">
       {
