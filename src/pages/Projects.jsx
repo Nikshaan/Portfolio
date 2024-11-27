@@ -1,9 +1,8 @@
 import Navbar from "../components/Navbar";
 import { ProjectSlide } from "../components/ProjectSlide";
 import { motion } from "framer-motion";
-import tictactoe from "../assets/tictactoe.png";
+import cinverse from "../assets/cineverse.png";
 import floraghar from "../assets/floraghar.png";
-import wordle from "../assets/wordle.png";
 import pokedex from "../assets/pokedex.png";
 
 const projectAnimation = {
@@ -24,12 +23,12 @@ const Projects = () => {
         </div>
         <div className="grid w-5/6 row-span-3 gap-12">
 
-          <motion.div
+        <motion.div
           variants={projectAnimation}
           initial = "hidden"
           animate = "visible"
           transition = {{ delay: 0.2, duration: 1.5}}>
-            <ProjectSlide img = {floraghar} heading = {'Floraghar'} desc  = {'A Responsive Plant Nursery Website.'} stack = {'React.js & Tailwind CSS'} github = {'https://github.com/Nikshaan/FloraGhar'} demo = {'https://nikshaan.github.io/FloraGhar/'}/>
+            <ProjectSlide img = {pokedex} heading = {'Pokedex'} desc  = {'A simple Pokedex built with PokeAPI.'} stack = {'React.js, Tailwind CSS & Framer Motion'} github = {'https://github.com/Nikshaan/Pokedex'} demo = {'https://nikshaan.github.io/Pokedex/'}/>
           </motion.div>
 
           <motion.div
@@ -37,7 +36,7 @@ const Projects = () => {
           initial = "hidden"
           animate = "visible"
           transition = {{ delay: 0.4, duration: 1.5}}>
-            <ProjectSlide img = {pokedex} heading = {'Pokedex'} desc  = {'A Simple Pokedex Build with PokeAPI.'} stack = {'React.js, Tailwind CSS & Framer Motion'} github = {'https://github.com/Nikshaan/Pokedex'} demo = {'https://nikshaan.github.io/Pokedex/'}/>
+            <ProjectSlide img = {cinverse} heading = {'Cineverse'} desc  = {'A movie info app built with OMDb API.'} stack = {'React.js, Tailwind CSS & Redux'} github = {'https://github.com/Nikshaan/Cineverse'} demo = {'https://nikshaan.github.io/Cineverse/'}/>
           </motion.div>
 
           <motion.div
@@ -45,15 +44,7 @@ const Projects = () => {
           initial = "hidden"
           animate = "visible"
           transition = {{ delay: 0.6, duration: 1.5}}>
-            <ProjectSlide img = {wordle} heading = {'Wordle'} desc  = {'Get 6 chances to guess a 5-letter word.'} stack = {'HTML, CSS & JavaScript'} github = {'https://github.com/Nikshaan/wordle'} demo = {'https://nikshaan.github.io/wordle/'}/>
-          </motion.div>
-
-          <motion.div
-          variants={projectAnimation}
-          initial = "hidden"
-          animate = "visible"
-          transition = {{ delay: 0.8, duration: 1.5}}>
-            <ProjectSlide img = {tictactoe} heading = {'Tic-Tac-Toe'} desc  = {'The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.'} stack = {'HTML, CSS & JavaScript'} github = {'https://github.com/Nikshaan/Tic-Tac-Toe'} demo = {'https://nikshaan.github.io/Tic-Tac-Toe/'}/>
+            <ProjectSlide img = {floraghar} heading = {'Floraghar'} desc  = {'A responsive plant nursery website.'} stack = {'React.js & Tailwind CSS'} github = {'https://github.com/Nikshaan/FloraGhar'} demo = {'https://nikshaan.github.io/FloraGhar/'}/>
           </motion.div>
 
         </div>

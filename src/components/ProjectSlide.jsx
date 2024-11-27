@@ -5,7 +5,7 @@ import live from "../assets/icons8-live-50.png";
 
 export const ProjectSlide = ({img, heading, desc, stack, github, demo}) => {
   return (
-    <div className="bg-white w-full h-full flex flex-col lg:flex-row gap-10 2xl:gap-20 items-center justify-between p-4 sm:py-0 md:pl-3  rounded-3xl">
+    <div className="bg-white w-full h-full flex flex-col lg:flex-row gap-10 2xl:gap-20 items-center justify-between p-2 sm:py-0 md:pl-3  rounded-3xl">
             <div className="w-full sm:mt-2 lg:mt-0 lg:w-1/2 sm:p-3 lg:p-0 lg:pl-2 lg:h-5/6 2xl:h-full 2xl:py-8 h-40 md:h-80">
                 <img src={img} alt="image" className="w-full h-full min-h-48 sm:min-h-64 md:h-full rounded-xl border-2 border-black"/>
             </div>
