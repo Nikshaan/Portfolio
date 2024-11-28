@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import { motion, spring } from "framer-motion";
 import photo1 from "../assets/photo1.jpg";
 import photo2 from "../assets/photo2.jpg";
@@ -88,8 +87,7 @@ const photos = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, 
 const Clicks = () => {
   return (
     <div>
-      <Navbar />
-      <div className="w-full flex justify-start items-center px-4 lg:pt-10 lg:pb-5 min-w-[320px]">
+      <div className="w-full flex justify-start items-center px-4 lg:pt-10 pb-5 min-w-[320px]">
           <h1 className="text-4xl md:text-5xl 2xl:text-6xl text-[#76ABAE] mt-10 px-6 underline-offset-8 underline font-Raleway">CLICKS</h1>
         </div>
       <div className="p-10 grid min-w-[320px] grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8">

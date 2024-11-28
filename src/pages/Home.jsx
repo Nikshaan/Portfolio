@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import bee from "../assets/bee.png";
 import { useMotionTemplate, useMotionValue, animate, motion } from "framer-motion";
 import { useEffect } from "react";
@@ -30,8 +29,6 @@ const Home = () => {
 
   return (
         <motion.div className="flex flex-col h-[100svh] relative min-w-[320px] min-h-[740px] md:min-h-[1084px] lg:min-h-[548px] xl:min-h-[692px] 2xl:min-h-[950px]">
-
-            <Navbar />
 
             <div className="bg-[#222831] w-full h-full flex flex-col lg:flex-row justify-center gap-8 items-center py-10 overflow-hidden">
                 <div className="w-1/2 h-full flex flex-col justify-center items-center relative lg:pl-24 xl:pl-0">
