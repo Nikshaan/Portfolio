@@ -4,8 +4,8 @@ import linkedin from "../assets/linkedin.png";
 import github from "../assets/icons8-github-50.png";
 import instagram from "../assets/icons8-instagram-50.png";
 import { Link } from "react-router-dom";
-import menu from "../assets/icons8-menu.png";
 import { useState } from "react";
+import { Sling as Hamburger } from 'hamburger-react';
 
 const underline = {
     initial: {width : 0},
@@ -14,7 +14,7 @@ const underline = {
 
 const Navbar = () => {
 
-    const [menuDisplay, setMenuDisplay] = useState(false);
+    const [isOpen, setOpen] = useState(false);
 
   return (
     <motion.div className = "flex items-center min-w-[320px] justify-around bg-[#222831] py-5 sm:px-10">
@@ -69,10 +69,11 @@ const Navbar = () => {
             </Link>
         </div>
 
-        <div className="sm:hidden relative">
-            <img src={menu} alt="menu" className="w-10" onClick={() => setMenuDisplay(!menuDisplay)}/>
+        <div className="sm:hidden relative text-white">
+            <Hamburger toggled={isOpen} toggle={setOpen} />
+            <div>
             {
-                menuDisplay && 
+                isOpen && 
                 <div className="px-4 py-3 flex flex-col justify-center items-center border-2 border-[#76ABAE] gap-2 right-6 my-2 -mx-9 absolute bg-[#31363F] z-10 text-white">
                     <div>
                         <NavLink to = "/">
@@ -93,6 +94,7 @@ const Navbar = () => {
                     </div>
                 </div>
             }
+            </div>
         </div>
         
     </motion.div>
