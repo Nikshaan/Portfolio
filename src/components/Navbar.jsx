@@ -76,19 +76,19 @@ const Navbar = () => {
                 isOpen && 
                 <div className="px-4 py-3 flex flex-col justify-center items-center border-2 border-[#76ABAE] gap-2 right-6 my-2 -mx-9 absolute bg-[#31363F] z-10 text-white">
                     <div>
-                        <NavLink to = "/">
+                        <NavLink to = "/" onClick={() => setOpen(false)}>
                             <p className="font-Raleway text-xl">Home</p>
                         </NavLink>
                     </div>
 
                     <div>
-                        <NavLink to = "/projects">
+                        <NavLink to = "/projects" onClick={() => setOpen(false)}>
                             <p className="font-Raleway text-xl">Projects</p>
                         </NavLink>
                     </div>
 
                     <div>
-                        <NavLink to = "/clicks">
+                        <NavLink to = "/clicks" onClick={() => setOpen(false)}>
                             <p className="font-Raleway text-xl">Clicks</p>
                         </NavLink>
                     </div>

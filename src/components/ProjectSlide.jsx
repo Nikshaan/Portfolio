@@ -25,7 +25,7 @@ export const ProjectSlide = ({img1, img2, img3, img4, heading, desc, stack, gith
             </div>
         </div>
         <div className="flex-1 lg:pr-4 flex flex-col justify-between lg:justify-center py-10 h-full w-full 2xl:py-16 lg:border-0">
-            <div className="flex flex-col  justify-center items-center">
+            <div className="flex flex-col  justify-center items-center px-4">
                 <h1 className="text-4xl sm:text-5xl md:text-5xl xl:text-6xl 2xl:text-7xl pt-4 -mt-8 md:-mt-10 font-Raleway font-bold">
                     {heading}
                 </h1>

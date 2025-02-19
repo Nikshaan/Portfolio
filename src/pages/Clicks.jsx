@@ -75,8 +75,21 @@ import photo73 from "../assets/photo73.jpg";
 import photo74 from "../assets/photo74.jpg";
 import photo75 from "../assets/photo75.jpg";
 import photo76 from "../assets/photo76.jpg";
+import photo77 from "../assets/photo77.jpeg";
+import photo78 from "../assets/photo78.jpeg";
+import photo79 from "../assets/photo79.jpeg";
+import photo80 from "../assets/photo80.jpeg";
+import photo81 from "../assets/photo81.jpeg";
+import photo82 from "../assets/photo82.jpeg";
+import photo83 from "../assets/photo83.jpeg";
+import photo84 from "../assets/photo84.jpeg";
+import photo85 from "../assets/photo85.jpeg";
+import photo86 from "../assets/photo86.jpeg";
+import photo87 from "../assets/photo87.jpeg";
+import photo88 from "../assets/photo88.jpeg";
 
-const photos = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10,
+const photos = [photo77, photo78, photo79, photo80, photo81, photo82, photo83, photo84, photo85, photo86,
+  photo87, photo88, photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10,
   photo11, photo12, photo13, photo14, photo15, photo16, photo17, photo18, photo19, photo20, photo21, photo22,
   photo23, photo24, photo25, photo26, photo27, photo28, photo29, photo30, photo31, photo32, photo33, photo34,
   photo35, photo36, photo37, photo38, photo39, photo40, photo41, photo42, photo43, photo44, photo45, photo46,
