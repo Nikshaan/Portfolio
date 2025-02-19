@@ -83,13 +83,12 @@ import photo81 from "../assets/photo81.jpeg";
 import photo82 from "../assets/photo82.jpeg";
 import photo83 from "../assets/photo83.jpeg";
 import photo84 from "../assets/photo84.jpeg";
-import photo85 from "../assets/photo85.jpeg";
-import photo86 from "../assets/photo86.jpeg";
-import photo87 from "../assets/photo87.jpeg";
-import photo88 from "../assets/photo88.jpeg";
+import { useState } from "react";
+import arrow from "../assets/arrow.png";
+import LazyLoad from 'react-lazyload';
 
-const photos = [photo77, photo78, photo79, photo80, photo81, photo82, photo83, photo84, photo85, photo86,
-  photo87, photo88, photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10,
+const photos = [photo77, photo78, photo79, photo80, photo81, photo82, photo83, photo84, 
+  photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10,
   photo11, photo12, photo13, photo14, photo15, photo16, photo17, photo18, photo19, photo20, photo21, photo22,
   photo23, photo24, photo25, photo26, photo27, photo28, photo29, photo30, photo31, photo32, photo33, photo34,
   photo35, photo36, photo37, photo38, photo39, photo40, photo41, photo42, photo43, photo44, photo45, photo46,
@@ -98,6 +97,21 @@ const photos = [photo77, photo78, photo79, photo80, photo81, photo82, photo83, p
   photo71, photo72, photo73, photo74, photo75, photo76]
 
 const Clicks = () => {
+
+  const [showArrow, setShowArrow] = useState(false);
+
+  const scrollFunc = () => {
+    let y = window.scrollY;
+    if(y>=1000){
+        setShowArrow(true)
+    }
+    else{
+        setShowArrow(false)
+    }
+  };
+
+  window.addEventListener("scroll", scrollFunc);
+
   return (
     <div>
       <div className="w-full flex justify-start items-center px-4 lg:pt-10 pb-5 min-w-[320px]">
@@ -107,14 +121,16 @@ const Clicks = () => {
       {
           photos.map((photo, index) => (
             <motion.div
-            initial = {{ y : '100svh'}}
-            animate = {{y : 0}}
-            transition={{ duration: 2, type : spring}}
             className="w-full  flex justify-center items-center bg-[#E0E0E0] shadow-black shadow-lg" key={index}>
-                <img src={photo} alt="image" className="w-full"/>
+                <LazyLoad once offset={100}>
+                  <img src={photo} alt="image" className="w-full"/>
+                </LazyLoad>
             </motion.div>
           ))
         }
+      </div>
+      <div className={`fixed z-20 p-2 rounded-full  bottom-0.5 right-0.5 lg:bottom-3 lg:right-3 xl:bottom-5 xl:right-5 ${showArrow?'block':'hidden'}`}>
+        <img className="cursor-pointer h-10 bg-white p-2 rounded-full border-2 border-black" alt="arrow" onClick={() => {window.scrollTo({top: 0, behavior: 'smooth'});}} src={arrow} />
       </div>
     </div>
   )

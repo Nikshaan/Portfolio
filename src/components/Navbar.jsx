@@ -6,6 +6,7 @@ import instagram from "../assets/icons8-instagram-50.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Sling as Hamburger } from 'hamburger-react';
+import { Tooltip } from 'react-tooltip'
 
 const underline = {
     initial: {width : 0},
@@ -59,14 +60,15 @@ const Navbar = () => {
 
         <div className="flex items-center justify-center gap-1">
             <Link to = "https://github.com/Nikshaan">
-                <img src = {github} alt="github" className="h-9 md:h-10 lg:h-12 bg-white rounded-full mx-2"/>
+                <img data-tooltip-id="my-tooltip" data-tooltip-content="github" src = {github} alt="github" className="h-9 md:h-10 lg:h-12 bg-white rounded-full mx-2"/>
             </Link>
             <Link to = "https://www.linkedin.com/in/nikshaan-shetty-951026293/">
-                <img src = {linkedin} alt="linkedin" className="h-9 md:h-10 lg:h-12 bg-white rounded-full mx-2"/>
+                <img data-tooltip-id="my-tooltip" data-tooltip-content="linkedIn" src = {linkedin} alt="linkedin" className="h-9 md:h-10 lg:h-12 bg-white rounded-full mx-2"/>
             </Link>
             <Link to= "https://www.instagram.com/nik.shaan/">
-                <img src = {instagram} alt="instagram" className="h-9 md:h-10 lg:h-12 bg-white rounded-full mx-2"/>
+                <img data-tooltip-id="my-tooltip" data-tooltip-content="instagram" src = {instagram} alt="instagram" className="h-9 md:h-10 lg:h-12 bg-white rounded-full mx-2"/>
             </Link>
+            <Tooltip id="my-tooltip" />
         </div>
 
         <div className="sm:hidden relative text-white">
