@@ -13,8 +13,7 @@ const Home = () => {
         deleteSpeed: 80,
         delaySpeed: 2500,
     });
-
-//min-h-[740px] md:min-h-[1084px] lg:min-h-[548px] xl:min-h-[692px] 2xl:min-h-[950px]
+    
   return (
         <motion.div className="flex flex-col min-h-[100svh] relative min-w-[320px]">
 

@@ -83,12 +83,33 @@ import photo81 from "../assets/photo81.jpeg";
 import photo82 from "../assets/photo82.jpeg";
 import photo83 from "../assets/photo83.jpeg";
 import photo84 from "../assets/photo84.jpeg";
+import photo85 from "../assets/photo85.jpeg"
+import photo86 from "../assets/photo86.jpeg";
+import photo87 from "../assets/photo87.jpeg";
+import photo88 from "../assets/photo88.jpeg";
+import photo89 from "../assets/photo89.jpeg";
+import photo90 from "../assets/photo90.jpeg";
+import photo91 from "../assets/photo91.jpeg";
+import photo92 from "../assets/photo92.jpeg";
+import photo93 from "../assets/photo93.jpeg";
+import photo94 from "../assets/photo94.jpeg";
+import photo95 from "../assets/photo95.jpeg"
+import photo96 from "../assets/photo96.jpeg";
+import photo97 from "../assets/photo97.jpeg";
+import photo98 from "../assets/photo98.jpeg";
+import photo99 from "../assets/photo99.jpeg";
+import photo100 from "../assets/photo100.jpeg";
+import photo101 from "../assets/photo101.jpeg";
+import photo102 from "../assets/photo102.jpeg";
+import photo103 from "../assets/photo103.jpeg";
 import { useState } from "react";
 import arrow from "../assets/arrow.png";
 import LazyLoad from 'react-lazyload';
 import Navbar from "../components/Navbar";
 
 const photos = [photo77, photo78, photo79, photo80, photo81, photo82, photo83, photo84, 
+  photo85, photo86, photo87, photo88, photo89, photo90, photo91, photo92, photo93, photo94, photo95, photo96, 
+  photo97, photo98, photo99, photo100, photo101, photo102, photo103,
   photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10,
   photo11, photo12, photo13, photo14, photo15, photo16, photo17, photo18, photo19, photo20, photo21, photo22,
   photo23, photo24, photo25, photo26, photo27, photo28, photo29, photo30, photo31, photo32, photo33, photo34,
@@ -114,7 +135,7 @@ const Clicks = () => {
   window.addEventListener("scroll", scrollFunc);
 
   return (
-    <div className="relative flex flex-col justify-center items-center w-full">
+    <div className="relative flex flex-col justify-center items-center w-full pb-20">
       <div className="absolute top-0 w-full">
         <Navbar />
       </div>

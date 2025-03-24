@@ -29,18 +29,24 @@ export const ProjectSlide = ({img1, img2, img3, img4, heading, desc, stack, gith
                 <h1 className="text-4xl font-Raleway font-bold">
                     {heading}
                 </h1>
-                <h3 className="text-base  my-2 font-medium text-gray-900 font-IBM">{desc}</h3>
-                <h4 className="text-sm  my-2 font-Raleway">Tech Stack: {stack}</h4>
+                <h3 className="text-base  my-2 font-medium text-gray-900 font-Raleway">{desc}</h3>
+                <h4 className="text-sm  my-2 font-IBM">Tech Stack: {stack}</h4>
             </div>
             <div className="flex gap-2 w-full justify-end items-center mt-5 px-4">
                 <Link to={github} alt="image" className="flex rounded-lg items-center text-sm justify-center gap-2 border-2 font-Raleway border-black py-1 px-2 text-white bg-[#222831]">
                     <p>GitHub</p>
                     <img src={repo} alt="repo" className="w-6 bg-white rounded-full"/>
                 </Link>
-                <Link to={demo} className="flex rounded-lg items-center text-sm  justify-center gap-2 border-2 font-Raleway border-black py-1 px-2 text-white bg-[#222831]">
-                    <p>Demo</p>
-                    <img src={live} alt="demo" className="w-6 bg-white rounded-full"/>
-                </Link>
+                {
+                    demo?
+                        <div>
+                            <Link to={demo} className="flex rounded-lg items-center text-sm  justify-center gap-2 border-2 font-Raleway border-black py-1 px-2 text-white bg-[#222831]">
+                                <p>Demo</p>
+                                <img src={live} alt="demo" className="w-6 bg-white rounded-full"/>
+                            </Link>
+                        </div>
+                    :null
+                }
             </div>
         </div>
     </div>

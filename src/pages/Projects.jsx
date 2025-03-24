@@ -13,6 +13,10 @@ import pokedex2 from "../assets/pokedex2.png";
 import pokedex3 from "../assets/pokedex3.png";
 import pokedex4 from "../assets/pokedex4.png";
 import Navbar from "../components/Navbar";
+import blogeez1 from "../assets/blogeez1.png";
+import blogeez2 from "../assets/blogeez2.png";
+import blogeez3 from "../assets/blogeez3.png";
+import blogeez4 from "../assets/blogeez4.png";
 
 const projectAnimation = {
   hidden: { x : '-100vw', opacity: 0 },
@@ -22,17 +26,17 @@ const projectAnimation = {
 const Projects = () => {
 
   return (
-    <div className="h-full relative flex flex-col overflow-auto min-w-[320px] md:max-h-[100svh] pb-10">
+    <div className="h-full relative flex flex-col overflow-auto min-w-[320px] md:max-h-[100svh] pb-20">
 
       <div className="absolute top-0 w-full">
         <Navbar />
       </div>
 
       <div className="flex flex-col justify-center items-center w-full bg-[#222831] pt-14">
-        <div className="flex justify-start items-center pt-8 w-[70%] sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[80%]">
+        <div className="flex justify-start items-center pt-8 w-[70%] sm:w-[90%] md:w-[85%] lg:w-[75%] xl:w-[85%]">
           <h1 className="text-4xl 2xl:text-5xl text-[#76ABAE] mb-10 mt-2 underline-offset-8 underline font-Raleway">PROJECTS</h1>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 w-[70%] sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[80%]">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8 w-[70%] sm:w-[90%] md:w-[85%] lg:w-[75%] xl:w-[90%]">
 
         <motion.div
           variants={projectAnimation}
@@ -56,6 +60,14 @@ const Projects = () => {
           animate = "visible"
           transition = {{duration: 1}}>
             <ProjectSlide img1 = {floraghar1} img2={floraghar2} img3={floraghar3} img4={floraghar4} heading = {'Floraghar'} desc  = {'A responsive plant nursery website.'} stack = {'React.js & Tailwind CSS'} github = {'https://github.com/Nikshaan/FloraGhar'} demo = {'https://nikshaan.github.io/FloraGhar/'}/>
+          </motion.div>
+
+          <motion.div
+          variants={projectAnimation}
+          initial = "hidden"
+          animate = "visible"
+          transition = {{duration: 0.8}}>
+            <ProjectSlide img1 = {blogeez1} img2={blogeez2} img3={blogeez3} img4={blogeez4} heading = {'BLOGeez'} desc  = {'A blog uploading & reading website.'} stack = {'React.js, Redux, TailwindCSS, Node, Express & MongoDB'} github = {'https://github.com/Nikshaan/Blogeez-backend'}/>
           </motion.div>
 
         </div>
