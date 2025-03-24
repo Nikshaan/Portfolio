@@ -6,7 +6,6 @@ import ErrorPage from "./pages/ErrorPage";
 import { useEffect, useState } from "react";
 import PreLoader from "./components/PreLoader";
 import "./App.css";
-import Navbar from "./components/Navbar";
 
 const App = () => {
   const [loader, upadateLoader] = useState(true);
@@ -20,7 +19,6 @@ const App = () => {
   return (
     <>
       <PreLoader loader={loader} />
-      <Navbar />
       <Routes>
         <Route path = "/" element = {<Home />} />
         <Route path = "/projects" element = {<Projects />} />

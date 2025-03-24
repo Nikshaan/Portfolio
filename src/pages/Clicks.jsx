@@ -86,6 +86,7 @@ import photo84 from "../assets/photo84.jpeg";
 import { useState } from "react";
 import arrow from "../assets/arrow.png";
 import LazyLoad from 'react-lazyload';
+import Navbar from "../components/Navbar";
 
 const photos = [photo77, photo78, photo79, photo80, photo81, photo82, photo83, photo84, 
   photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10,
@@ -113,15 +114,21 @@ const Clicks = () => {
   window.addEventListener("scroll", scrollFunc);
 
   return (
-    <div>
-      <div className="w-full flex justify-start items-center px-4 lg:pt-10 pb-5 min-w-[320px]">
-          <h1 className="text-4xl md:text-5xl 2xl:text-6xl text-[#76ABAE] mt-10 px-6 underline-offset-8 underline font-Raleway">CLICKS</h1>
-        </div>
-      <div className="p-10 grid min-w-[320px] grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8">
+    <div className="relative flex flex-col justify-center items-center w-full">
+      <div className="absolute top-0 w-full">
+        <Navbar />
+      </div>
+      <div className="w-[90%] lg:w-[80%] 2xl:w-[60%] px-10 flex justify-start items-center pt-14 min-w-[320px]">
+          <h1 className="text-4xl 2xl:text-5xl text-[#76ABAE] mt-10 -mb-4 underline-offset-8 underline font-Raleway">CLICKS</h1>
+      </div>
+      <div className="p-10 min-w-[320px] w-[90%] lg:w-[80%] 2xl:w-[60%] columns-1 sm:columns-2 md:columns-3">
       {
           photos.map((photo, index) => (
             <motion.div
-            className="w-full  flex justify-center items-center bg-[#E0E0E0] shadow-black shadow-lg" key={index}>
+            initial = {{opacity: 0}}
+            animate = {{opacity: 1}}
+            transition = {{ delay: 0.2, duration: 1.5}}
+            className="w-full flex justify-center items-center my-4 shadow-black shadow-md" key={index}>
                 <LazyLoad once offset={100}>
                   <img src={photo} alt="image" className="w-full"/>
                 </LazyLoad>
