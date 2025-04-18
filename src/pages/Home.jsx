@@ -22,7 +22,7 @@ const Home = () => {
             </div>
 
             <div className="bg-[#222831] w-full h-full min-h-[100svh] flex flex-col lg:flex-row justify-center gap-8 items-center">
-                <div className="w-1/2 h-full flex flex-col justify-center items-center relative lg:pl-24 xl:pl-0">
+                <div className="w-1/2 mt-10 h-full flex flex-col justify-center items-center relative lg:pl-24 xl:pl-0">
                     <h1 className="text-center text-7xl md:text-8xl lg:text-9xl font-thin font-Raleway text-[#76ABAE] cursor-pointer m-10 mb-4">
                         {"Nikshaan Shetty".split("").map((letter, index) =>
                             (
@@ -42,7 +42,7 @@ const Home = () => {
                     </h1>
                 </div>
                 <div className="flex xl:w-1/2 justify-center items-center">
-                    <motion.img
+                    <motion.img loading="lazy"
                     initial = {{opacity : 0}}
                     animate = {{opacity : 1}}
                     transition = {{duration : 2, delay : 1}}
