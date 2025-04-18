@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import pepe from "../assets/pepe.png";
+import pepe from "../assets/pepe.webp";
 
 const ErrorPage = () => {
   return (

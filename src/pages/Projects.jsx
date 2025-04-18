@@ -1,22 +1,22 @@
 import { ProjectSlide } from "../components/ProjectSlide";
 import { motion } from "framer-motion";
-import cinverse1 from "../assets/cineverse1.png";
-import cinverse2 from "../assets/cineverse2.png";
-import cinverse3 from "../assets/cineverse3.png";
-import cinverse4 from "../assets/cineverse4.png";
-import floraghar1 from "../assets/floraghar1.png";
-import floraghar2 from "../assets/floraghar2.png";
-import floraghar3 from "../assets/floraghar3.png";
-import floraghar4 from "../assets/floraghar4.png";
-import pokedex1 from "../assets/pokedex1.png";
-import pokedex2 from "../assets/pokedex2.png";
-import pokedex3 from "../assets/pokedex3.png";
-import pokedex4 from "../assets/pokedex4.png";
+import cinverse1 from "../assets/cineverse1.webp";
+import cinverse2 from "../assets/cineverse2.webp";
+import cinverse3 from "../assets/cineverse3.webp";
+import cinverse4 from "../assets/cineverse4.webp";
+import floraghar1 from "../assets/floraghar1.webp";
+import floraghar2 from "../assets/floraghar2.webp";
+import floraghar3 from "../assets/floraghar3.webp";
+import floraghar4 from "../assets/floraghar4.webp";
+import pokedex1 from "../assets/pokedex1.webp";
+import pokedex2 from "../assets/pokedex2.webp";
+import pokedex3 from "../assets/pokedex3.webp";
+import pokedex4 from "../assets/pokedex4.webp";
 import Navbar from "../components/Navbar";
-import blogeez1 from "../assets/blogeez1.png";
-import blogeez2 from "../assets/blogeez2.png";
-import blogeez3 from "../assets/blogeez3.png";
-import blogeez4 from "../assets/blogeez4.png";
+import blogeez1 from "../assets/blogeez1.webp";
+import blogeez2 from "../assets/blogeez2.webp";
+import blogeez3 from "../assets/blogeez3.webp";
+import blogeez4 from "../assets/blogeez4.webp";
 
 const projectAnimation = {
   hidden: { x : '-100vw', opacity: 0 },

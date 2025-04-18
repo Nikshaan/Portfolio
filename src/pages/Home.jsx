@@ -1,4 +1,4 @@
-import bee from "../assets/bee.png";
+import bee from "../assets/bee.webp";
 import { useMotionTemplate, useMotionValue, animate, motion } from "framer-motion";
 import { useEffect } from "react";
 import { useTypewriter, Cursor} from "react-simple-typewriter";

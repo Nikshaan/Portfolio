@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import repo from "../assets/icons8-github-50.png";
-import live from "../assets/icons8-live-50.png";
+import repo from "../assets/icons8-github-50.webp";
+import live from "../assets/icons8-live-50.webp";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from 'embla-carousel-autoplay';
 
@@ -11,16 +11,16 @@ export const ProjectSlide = ({img1, img2, img3, img4, heading, desc, stack, gith
         <div className="embla" ref={emblaRef}>
             <div className="embla__container w-full">
                 <div className="embla__slide w-full">
-                    <img src={img1} alt="image" className="w-full lg:border-2 lg:border-[#76ABAE] h-full sm:min-h-64 md:h-full border-2 border-[#76ABAE]"/>
+                    <img loading="lazy" src={img1} alt="image" className="w-full lg:border-2 lg:border-[#76ABAE] h-full sm:min-h-64 md:h-full border-2 border-[#76ABAE]"/>
                 </div>
                 <div className="embla__slide">
-                    <img src={img2} alt="image" className="w-full h-full sm:min-h-64 md:h-full border-2 lg:border-2 border-[#76ABAE]"/>
+                    <img loading="lazy" src={img2} alt="image" className="w-full h-full sm:min-h-64 md:h-full border-2 lg:border-2 border-[#76ABAE]"/>
                 </div>
                 <div className="embla__slide">
-                    <img src={img3} alt="image" className="w-full h-full sm:min-h-64 md:h-full border-2 lg:border-2 border-[#76ABAE]"/>
+                    <img loading="lazy" src={img3} alt="image" className="w-full h-full sm:min-h-64 md:h-full border-2 lg:border-2 border-[#76ABAE]"/>
                 </div>
                 <div className="embla__slide">
-                    <img src={img4} alt="image" className="w-full h-full sm:min-h-64 md:h-full border-2 lg:border-2 border-[#76ABAE]"/>
+                    <img loading="lazy" src={img4} alt="image" className="w-full h-full sm:min-h-64 md:h-full border-2 lg:border-2 border-[#76ABAE]"/>
                 </div>
             </div>
         </div>
@@ -35,14 +35,14 @@ export const ProjectSlide = ({img1, img2, img3, img4, heading, desc, stack, gith
             <div className="flex gap-2 w-full justify-end items-center mt-5 px-4">
                 <Link to={github} alt="image" className="flex rounded-lg items-center text-sm justify-center gap-2 border-2 font-Raleway border-black py-1 px-2 text-white bg-[#222831]">
                     <p>GitHub</p>
-                    <img src={repo} alt="repo" className="w-6 bg-white rounded-full"/>
+                    <img loading="lazy" src={repo} alt="repo" className="w-6 bg-white rounded-full"/>
                 </Link>
                 {
                     demo?
                         <div>
                             <Link to={demo} className="flex rounded-lg items-center text-sm  justify-center gap-2 border-2 font-Raleway border-black py-1 px-2 text-white bg-[#222831]">
                                 <p>Demo</p>
-                                <img src={live} alt="demo" className="w-6 bg-white rounded-full"/>
+                                <img loading="lazy" src={live} alt="demo" className="w-6 bg-white rounded-full"/>
                             </Link>
                         </div>
                     :null

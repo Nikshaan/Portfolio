@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import linkedin from "../assets/linkedin.png";
-import github from "../assets/icons8-github-50.png";
-import instagram from "../assets/icons8-instagram-50.png";
+import linkedin from "../assets/linkedin.webp";
+import github from "../assets/icons8-github-50.webp";
+import instagram from "../assets/icons8-instagram-50.webp";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Squash as Hamburger } from 'hamburger-react';
