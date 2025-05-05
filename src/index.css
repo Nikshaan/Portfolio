@@ -9,10 +9,11 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: #222831;
+    cursor: url('./assets//sword.webp'), auto;
 }
 
 .active {
-    color: #76ABAE;
+    color: gray;
 }
 
 .hoverText {

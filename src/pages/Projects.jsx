@@ -47,7 +47,7 @@ const Projects = () => {
           variants={projectAnimation}
           initial = "hidden"
           animate = "visible"
-          transition = {{duration: 1.4}}>
+          transition = {{duration: 0.6}}>
             <ProjectSlide img1 = {pokedex1} img2={pokedex2} img3={pokedex3} img4={pokedex4} heading = {'Pokedex'} desc  = {'A simple Pokedex built with PokeAPI.'} stack = {'React.js, Tailwind CSS & Framer Motion'} github = {'https://github.com/Nikshaan/Pokedex'} demo = {'https://nikshaan.github.io/Pokedex/'}/>
           </motion.div>
 
@@ -55,7 +55,7 @@ const Projects = () => {
           variants={projectAnimation}
           initial = "hidden"
           animate = "visible"
-          transition = {{duration: 1.2}}>
+          transition = {{duration: 0.8}}>
             <ProjectSlide img1 = {cinverse1} img2={cinverse2} img3={cinverse3} img4={cinverse4} heading = {'Cineverse'} desc  = {'A movie info app built with OMDb API.'} stack = {'React.js, Tailwind CSS & Redux'} github = {'https://github.com/Nikshaan/Cineverse'} demo = {'https://nikshaan.github.io/Cineverse/'} />
           </motion.div>
 
@@ -71,7 +71,7 @@ const Projects = () => {
           variants={projectAnimation}
           initial = "hidden"
           animate = "visible"
-          transition = {{duration: 0.8}}>
+          transition = {{duration: 1.2}}>
             <ProjectSlide img1 = {blogeez1} img2={blogeez2} img3={blogeez3} img4={blogeez4} heading = {'BLOGeez'} desc  = {'A blog uploading & reading website.'} stack = {'React.js, Redux, TailwindCSS, Node, Express & MongoDB'} github = {'https://github.com/Nikshaan/Blogeez-backend'} />
           </motion.div>
 
@@ -79,7 +79,7 @@ const Projects = () => {
           variants={projectAnimation}
           initial = "hidden"
           animate = "visible"
-          transition = {{duration: 0.6}}>
+          transition = {{duration: 1.4}}>
             <ProjectSlide img1 = {valorant1} img2={valorant2} img3={valorant3} img4={valorant4} heading = {'valorant-tracker'} desc  = {'Track valorant performance and see detailed match stats.'} stack = {'TypeScript, React.js, TailwindCSS, Axios, Chart.js'} github = {'https://github.com/Nikshaan/valorant-tracker'} demo = {'https://valorant-tracker-alpha.vercel.app/'} />
           </motion.div>
 

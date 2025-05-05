@@ -141,7 +141,7 @@ const Clicks = () => {
       <div className="w-[90%] lg:w-[80%] 2xl:w-[60%] px-10 flex justify-start items-center pt-14 min-w-[320px]">
           <h1 className="text-4xl 2xl:text-5xl text-[#76ABAE] mt-10 -mb-4 underline-offset-8 underline font-Raleway">CLICKS</h1>
       </div>
-      <div className="p-10 min-w-[320px] w-[90%] lg:w-[80%] 2xl:w-[60%] columns-2 sm:columns-2 md:columns-3">
+      <div className="p-10 min-w-[320px] w-[90%] lg:w-[80%] 2xl:w-[60%] columns-1 sm:columns-2 md:columns-3">
       {
           photos.map((photo, index) => (
             <motion.div

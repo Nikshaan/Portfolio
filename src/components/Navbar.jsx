@@ -76,24 +76,36 @@ const Navbar = () => {
             <div>
             {
                 isOpen && 
-                <div className="px-10 py-5 flex flex-col justify-center items-center border-2 border-[#76ABAE] gap-3 right-6 my-2 -mx-9 absolute bg-[#222831] z-10 text-white">
-                    <div>
+                <div className="px-10 py-5 font-medium overflow-hidden flex flex-col justify-center items-center border-2 border-[#222831] rounded-xl gap-3 right-6 my-2 -mx-9 absolute bg-[#76ABAE] z-10">
+                    <motion.div
+                    initial = {{opacity: 0, x: '-20vh'}}
+                    animate = {{opacity: 1, x: 0}}
+                    transition={{duration: 0.6}}
+                    >
                         <NavLink to = "/" onClick={() => setOpen(false)}>
-                            <p className="font-Raleway text-xl">Home</p>
+                            <p className="font-Raleway text-xl ">Home</p>
                         </NavLink>
-                    </div>
+                    </motion.div>
 
-                    <div>
+                    <motion.div
+                    initial = {{opacity: 0, x: '-20vh'}}
+                    animate = {{opacity: 1, x: 0}}
+                    transition={{duration: 0.8}}
+                    >
                         <NavLink to = "/projects" onClick={() => setOpen(false)}>
                             <p className="font-Raleway text-xl">Projects</p>
                         </NavLink>
-                    </div>
+                    </motion.div>
 
-                    <div>
+                    <motion.div
+                    initial = {{opacity: 0, x: '-20vh'}}
+                    animate = {{opacity: 1, x: 0}}
+                    transition={{duration: 1}}
+                    >
                         <NavLink to = "/clicks" onClick={() => setOpen(false)}>
                             <p className="font-Raleway text-xl">Clicks</p>
                         </NavLink>
-                    </div>
+                    </motion.div>
                 </div>
             }
             </div>
