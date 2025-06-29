@@ -21,7 +21,10 @@ import valorant1 from "../assets/valorant1.webp";
 import valorant2 from "../assets/valorant2.webp";
 import valorant3 from "../assets/valorant3.webp";
 import valorant4 from "../assets/valorant4.webp";
-
+import localbee1 from "../assets/localbee1.webp";
+import localbee2 from "../assets/localbee2.webp";
+import localbee3 from "../assets/localbee3.webp";
+import localbee4 from "../assets/localbee4.webp";
 
 const projectAnimation = {
   hidden: { x : '-100vw', opacity: 0 },
@@ -72,7 +75,7 @@ const Projects = () => {
           initial = "hidden"
           animate = "visible"
           transition = {{duration: 1.2}}>
-            <ProjectSlide img1 = {blogeez1} img2={blogeez2} img3={blogeez3} img4={blogeez4} heading = {'BLOGeez'} desc  = {'A blog uploading & reading website.'} stack = {'React.js, Redux, TailwindCSS, Node, Express & MongoDB'} github = {'https://github.com/Nikshaan/Blogeez-backend'} />
+            <ProjectSlide img1 = {blogeez1} img2={blogeez2} img3={blogeez3} img4={blogeez4} heading = {'BLOGeez'} desc  = {'A blog uploading & reading website.'} stack = {'React.js, Redux, TailwindCSS, Node, Express & MongoDB'} github = {'https://github.com/Nikshaan/Blogeez-backend'} demo={'https://blogeez-backend-1.onrender.com/feed'}/>
           </motion.div>
 
           <motion.div
@@ -81,6 +84,14 @@ const Projects = () => {
           animate = "visible"
           transition = {{duration: 1.4}}>
             <ProjectSlide img1 = {valorant1} img2={valorant2} img3={valorant3} img4={valorant4} heading = {'valorant-tracker'} desc  = {'Track valorant performance and see detailed match stats.'} stack = {'TypeScript, React.js, TailwindCSS, Axios, Chart.js'} github = {'https://github.com/Nikshaan/valorant-tracker'} demo = {'https://valorant-tracker-alpha.vercel.app/'} />
+          </motion.div>
+
+          <motion.div
+          variants={projectAnimation}
+          initial = "hidden"
+          animate = "visible"
+          transition = {{duration: 1.6}}>
+            <ProjectSlide img1 = {localbee1} img2={localbee2} img3={localbee3} img4={localbee4} heading = {'LocalBee'} desc  = {'Map with visited locations pinged.'} stack = {'NextJS, TypeScript, TailwindCSS, FastAPI, PostgreSQL'} github = {'https://github.com/Nikshaan/LocalBee'} demo = {'https://local-bee.vercel.app/'} />
           </motion.div>
 
         </div>
